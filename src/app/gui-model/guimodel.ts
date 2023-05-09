@@ -94,6 +94,12 @@ export class GuiModel {
                         }
                     ]
                 },
+                {   "type": "button",
+                    "name": "Groups",
+                    "icon": "fa-weixin",
+                    "color": "wisteria",
+                    "page": "groupspage",
+                },
                 {
                     "id": "AddActivityForm",
                     "title": "Activity",
