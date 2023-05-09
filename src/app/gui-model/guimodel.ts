@@ -97,11 +97,30 @@ export class GuiModel {
                     ]
                 },
                 {
-                    "type": "button",
-                    "name": "Groups",
-                    "icon": "fa-weixin",
-                    "color": "wisteria",
-                    "page": "groupspage",
+                    "id": "GroupForm",
+                    "title": "Group",
+                    "url": "/group",
+                    "formFieldList": [
+                        {
+                            "id": "name",
+                            "type": "text",
+                            "name": "GroupName",
+                            "width": 2,
+                            "required": true 
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok" 
+                        }
+                    ]
                 },
                 {
                     "id": "AddActivityForm",
@@ -230,7 +249,17 @@ export class GuiModel {
                             "form": {
                                 "form": "GroupForm" 
                             }
-                        }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search": true,
+                            "url": "/group",
+                            "form": {
+                            "form": "GroupForm"
+                            }
+                        },
                     ]
                 }
             ]
