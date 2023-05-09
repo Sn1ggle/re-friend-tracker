@@ -27,11 +27,13 @@ export class GuiModel {
                             "width": 1,
                             "required": true
                         },
-                        {   "id": "nickname",
+                        {
+                            "id": "nickname",
                             "type": "text",
                             "name": "Nickname",
                             "width": 2,
-                            "required": true },
+                            "required": true
+                        },
                         {
                             "id": "location",
                             "type": "autocomplete",
@@ -94,7 +96,8 @@ export class GuiModel {
                         }
                     ]
                 },
-                {   "type": "button",
+                {
+                    "type": "button",
                     "name": "Groups",
                     "icon": "fa-weixin",
                     "color": "wisteria",
@@ -149,7 +152,7 @@ export class GuiModel {
                             "color": "yellow",
                             "page": "locationspage",
                         },
-                        {   
+                        {
                             "type": "button",
                             "name": "Groups",
                             "icon": "fa-weixin",
@@ -213,6 +216,23 @@ export class GuiModel {
                         },
                     ]
                 },
+                {
+                    "id": "groupspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewGroup",
+                            "icon": "fa-weixin",
+                            "color": "green",
+                            "form": {
+                                "form": "GroupForm" 
+                            }
+                        }
+                    ]
+                }
             ]
         }
     };
