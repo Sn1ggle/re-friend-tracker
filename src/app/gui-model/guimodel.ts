@@ -55,7 +55,7 @@ export class GuiModel {
                             "type": "autocomplete",
                             "name": "Activity",
                             "url": "/activity",
-                            "form": "ActivityForm",
+                            "form": "AddActivityForm",
                             "width": 2
                         },
                         {
